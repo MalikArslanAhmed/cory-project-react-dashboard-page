@@ -1,0 +1,175 @@
+body {
+    background-color: #f8f9fd;
+}
+
+.dashboard {
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+
+        .top-first {
+            display: flex;
+            justify-content: space-between;
+
+            h2 {
+                margin: 0;
+                color: #5a5a62;
+            }
+
+            button {
+                color: white;
+                padding-left: 6px;
+                padding-right: 8px;
+                background-color: #436cd8;
+                border: 0;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                border-radius: 5px;
+
+                svg {
+                    font-size: larger;
+                    color: #a1b5f4;
+                }
+            }
+        }
+
+        .top-second {
+            display: flex;
+            gap: 27px;
+            margin-top: 24px;
+
+            .blue {
+                background-color: #436cd8;
+            }
+
+            .green {
+                background-color: #1fc78a;
+            }
+
+            .purple {
+                background-color: #37b8cb;
+            }
+
+            .yellow {
+                background-color: #f7c23e;
+            }
+
+            .outter-card {
+                width: 100%;
+                border-radius: 2%;
+
+                .top-second-card {
+                    box-shadow: 0 4px 26px 0 rgba(133 133 133 / 20%);
+                    transition: 0.3s;
+                    display: flex;
+                    border-radius: 2px;
+                    width: 100%;
+                    background: white;
+                    margin-left: 5px;
+                    position: relative;
+
+                    .tag {
+                        background-color: #e74842;
+                        position: absolute;
+                        bottom: -9px;
+                        right: -9px;
+                        border-radius: 20%;
+
+                        p {
+                            span {
+                                font-weight: 400;
+                                font-size: 16px;
+                            }
+
+                            color: white;
+                            font-weight: 600;
+                            padding: 0px 6px;
+                            margin-top: 9px;
+                            margin-bottom: 12px;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .img-container {
+                        width: 18%;
+                        align-items: center;
+                        display: flex;
+                        margin-left: 36px;
+                        margin-right: 9px;
+
+                        img {
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .container {
+                        padding: 21px 1px;
+
+                        h3 {
+                            margin: 0;
+                            color: #404040;
+                        }
+
+                        p {
+                            margin: 5px;
+                            font-size: 15px;
+                            margin-top: 2px;
+                            margin-left: 0;
+                            color: #436cd8;
+                            font-weight: 450;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .buttom {
+        margin-top: 40px;
+        display: flex;
+        width: 100%;
+        gap: 2%;
+
+        .video-call {
+            .header {
+                box-shadow: 0 4px 26px 0 rgba(133 133 133 / 20%);
+                transition: 0.3s;
+
+                h4 {
+                    color: #436cd8;
+                    margin: 0;
+                    padding-left: 45px;
+                    padding-top: 12px;
+                    padding-bottom: 11px;
+                }
+            }
+
+            width: 69%;
+        }
+
+        .light-control {
+            width: 29%;
+            box-shadow: 0 4px 26px 0 rgba(133 133 133 / 20%);
+            transition: 0.3s;
+
+            .header {
+                box-shadow: 0 4px 26px 0 rgba(133 133 133 / 20%);
+                transition: 0.3s;
+
+                h4 {
+                    color: #436cd8;
+                    margin: 0;
+                    padding-left: 45px;
+                    padding-top: 12px;
+                    padding-bottom: 11px;
+                }
+            }
+        }
+    }
+}
