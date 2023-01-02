@@ -1,11 +1,8 @@
-import DashBoard from "./dashBoard/DashBoard"
+import Dashboard from "./dashboard/Dashboard"
 function App() {
   return (
     <>
-
-
-
-  <DashBoard/>
+      <Dashboard />
     </>
   );
 }
