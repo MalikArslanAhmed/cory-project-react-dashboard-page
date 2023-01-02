@@ -86,8 +86,8 @@ const Dashboard = () => {
                 />
               </div>
               <div className="container">
-                <h3>OliviaSweetChild79!!</h3>
-                <p>Yumma</p>
+                <h3>Nisha Henry</h3>
+                <p>Trebee</p>
               </div>
               <div className="tag">
                 <p>Next</p>
