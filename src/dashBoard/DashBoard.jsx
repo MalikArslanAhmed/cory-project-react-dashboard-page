@@ -8,11 +8,20 @@ import green from "./../assets/green.png";
 import pink from "./../assets/pink.png";
 import yellow from "./../assets/yellow.png";
 import CircularColor from "react-circular-color";
-
+import Carousel from "react-elastic-carousel";
 const Dashboard = () => {
-  const persons =[1,1,1,11,1,1];
+
+  const persons = [1, 1, 1, 11, 1, 1];
   const [selectedIcon, setSelectedIcon] = useState(red);
-  function handleColorChange(color) {}
+  function handleColorChange(color) { }
+
+  const breakPoints = [
+    { width: 1, itemsToShow: 2 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 }
+  ];
+
   return (
     <div className="dashboard">
       <div className="top">
@@ -216,12 +225,82 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
+
+          <div className="carousel-wrapper">
+            <Carousel breakPoints={breakPoints}>
+                <div className="top-second-card">
+                  <div className="img-container">
+                    <img
+                      src="https://www.w3schools.com/bootstrap4/img_avatar3.png"
+                      alt="Avatar"
+                    />
+                  </div>
+                  <div className="container">
+                    <h4>Angella Williams</h4>
+                    <p className="s-name">Yumma</p>
+                    <p><b>SEC &nbsp;</b> 20</p>
+                  </div>
+                </div>
+                <div className="top-second-card">
+                  <div className="img-container">
+                    <img
+                      src="https://www.w3schools.com/bootstrap4/img_avatar3.png"
+                      alt="Avatar"
+                    />
+                  </div>
+                  <div className="container">
+                    <h4>David Valatine</h4>
+                    <p className="s-name">ShowerTime</p>
+                    <p>NEXT</p>
+                  </div>
+                </div>
+                <div className="top-second-card">
+                  <div className="img-container">
+                    <img
+                      src="https://www.w3schools.com/bootstrap4/img_avatar3.png"
+                      alt="Avatar"
+                    />
+                  </div>
+                  <div className="container">
+                    <h4>Nisha Henry</h4>
+                    <p className="s-name">Trebee</p>
+                    <p>NEXT</p>
+                  </div>
+                </div>
+                <div className="top-second-card">
+                  <div className="img-container">
+                    <img
+                      src="https://www.w3schools.com/bootstrap4/img_avatar3.png"
+                      alt="Avatar"
+                    />
+                  </div>
+                  <div className="container">
+                    <h4>Nisha Henry</h4>
+                    <p className="s-name">Trebee</p>
+                    <p>NEXT</p>
+                  </div>
+                </div>
+              <div className="top-second-card">
+                <div className="img-container">
+                  <img
+                    src="https://www.w3schools.com/bootstrap4/img_avatar3.png"
+                    alt="Avatar"
+                  />
+                </div>
+                <div className="container">
+                  <h4>John Doe</h4>
+                  <p className="s-name">Architect & Engineer</p>
+                  <p>NEXT</p>
+                </div>
+              </div>
+            </Carousel>
+          </div>
           <div className="light-control">
             <div className="header">
               <h4>PERSONS</h4>
             </div>
             <div className="persons-wrapper">
-              {persons.map((r,i) => {
+              {persons.map((r, i) => {
                 return (
                   <div key={i} className="person-card-container">
                     <div className="avatr-container">
